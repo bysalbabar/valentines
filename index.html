@@ -2,42 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>For You ❤️</title>
+  <title>Valentine ❤️</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <section class="section hero">
-    <h1>Hey ❤️</h1>
-    <p>I made something special for you</p>
-    <button onclick="scrollToNext()">Tap to continue 💕</button>
-  </section>
+  <div class="container">
+    <h1>Will you be my Valentine? 💖</h1>
 
-  <section class="section message">
-    <h2>You Mean So Much To Me</h2>
-    <p>
-      Every smile of yours, every little moment,<br>
-      makes my days brighter ✨
-    </p>
-  </section>
-
-  <section class="section hearts">
-    <h2>My Heart Is Yours 💖</h2>
-    <div class="heart">❤️</div>
-    <div class="heart">❤️</div>
-    <div class="heart">❤️</div>
-  </section>
-
-  <section class="section question">
-    <h1>Will you be my Valentine? 🌹</h1>
     <div class="buttons">
-      <button onclick="yes()">YES ❤️</button>
-      <button onclick="yes()">OBVIOUSLY YES 😍</button>
+      <button class="yes" onclick="yesClicked()">YES ❤️</button>
+      <button class="no" id="noBtn">NO 💔</button>
     </div>
-    <p id="reply"></p>
-  </section>
+
+    <p id="message"></p>
+  </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
